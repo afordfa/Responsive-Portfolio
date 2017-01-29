@@ -1,0 +1,555 @@
+html, bodyhtml, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+.footer,
+.push {
+  height: 30px;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url("../images/knitting.png");
+	line-height: 24px;
+}
+
+
+header {
+	background-color: #ffffff;
+	padding-bottom: 100px;
+	}
+
+h1 {
+	font-size: 36px;
+	background-color: #4aaaa5;
+	color: #fff;
+	padding: 15px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	width: 200px;
+	text-align: center;
+	float:left;
+	position: relative;
+	left: 80px;
+	top: 46px;
+}
+
+h2 {
+	font-size: 36px;
+	padding: 15px 0px 15px 0px;
+	border-style: solid;
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;	
+}
+
+
+h3 {
+	font-size: 24px;
+	padding-top: 15px;
+	border-style: solid;
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;	
+}
+
+.main, .connect {
+	background-color: #ffffff;
+	margin-top: 30px;
+}
+
+
+
+.main {
+	width: 610px;
+	clear:both;
+	float:left;
+	margin: 30px 20px 80px 80px;
+	/*margin-right: 20px;
+	margin-bottom: 80px;*/
+	padding: 0px 20px 20px 20px;
+}
+
+.connect {
+	width: 230px;
+	float: left;
+	text-align: center;
+	margin-left: 20px;
+	padding: 0px 20px 15px 20px;
+}
+
+
+#introduction, footer, input, form, a {
+	color: #777777;
+	text-decoration: none;
+}
+
+
+
+
+footer {
+	clear:both;
+	text-align: center;
+	background-color: #666666;
+	color: #ffffff;
+	padding: 20px 0px 20px 0px;
+	border-top-style: solid;
+	border-width: 8px;
+	border-color: #4aaaa5;
+	font-size: 10px;
+}
+
+
+
+/*MENU BAR*/
+
+#menuBar{
+	color: #777777;
+	text-decoration: none;
+}
+
+#about, #portfolio, #contact {
+	float: left;
+	padding: 2px 8px 2px 8px;
+}
+
+#about, #portfolio {
+	border-right-style: solid;
+	border-color: #f1f1f1;
+	border-width: 1px;
+}
+
+#about {
+	position: relative;
+	top: 70px;
+	left: 572px;
+}
+
+#portfolio {
+	position: relative;
+	top: 70px;
+	left: 572px;
+}
+
+#contact {
+	position: relative;
+	top: 70px;
+	left: 572px;
+}
+
+
+
+/*END MENU BAR*/
+
+
+
+
+
+
+/*ABOUT ME PAGE*/
+#headshot, #introduction {
+	float: left;
+	margin: 10px;
+}
+
+
+#introduction em{
+	color: #4d1979;
+	font-weight: bold;
+}
+
+/*END ABOUT ME PAGE*/
+
+
+
+
+
+
+
+/*CONTACT PAGE*/
+
+input[type=submit] {
+	background-color: #4aaaa5;
+	color: #fff;
+	padding: 10px 20px 10px 20px;
+	border: none;
+}
+
+input[type=submit]:hover {
+	background-color: #BBFFFB;
+	color: #5E7F7E;
+	padding: 10px 20px 10px 20px;
+	border: none;
+}
+
+input[type=text], input[type=message] {
+    font-size: 20px;
+    margin-bottom:10px;
+    padding: 8px 6px;
+    height: 38px;
+    width:250px;
+    box-sizing: border-box;
+}
+
+/*END CONTACT PAGE*/
+
+
+/*CONTACT IMAGES*/
+
+.contactImages img {
+	border: solid;
+	border-color: white;
+}
+
+.contactImages img:hover {
+	border-color: #4aaaa5;
+}
+
+
+
+/*END CONTACT IMAGES*/
+
+
+
+/*PORTFOLIO PAGE*/
+
+.tileName {  /*header inside portfolio tiles*/
+	background-color: #4aaaa5;
+	color: #fff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	position: relative;
+	bottom: 65px;
+	width: 275px;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+}
+
+.programTile {
+	float: left;
+	margin: 20px 10px 20px 10px;
+	width: 275px;
+	height: 184px;
+}
+
+.programTile:hover .tileName {
+	font-size: 24px;
+	background-color: #4d1979;
+	border: solid;
+    border-color: black;
+    width: 269px;
+	}
+
+
+/*END PORTFOLIO PAGE*/
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+/*Inside your Responsive-Portfolio folder, find your styles.css file. You will write your media queries at the bottom of styles.css.
+
+Use three @media screen tags, each with one of these max-widths: 980px, 768px and 640px.
+You use 980px because you never want any of the content to be cut off. Since the desktop layout is about 960px wide, you want the media queries to kick in before your content gets cut off.
+768px is about the width of a tablet and 640px is about the width of a phone in landscape.*/
+
+@media screen and (max-width: 980px) {
+	/*MENU BAR*/
+
+	#menuBar{
+		color: #777777;
+		text-decoration: none;
+/*		position: fixed;
+		right: 210px;*/
+	}
+
+	#about, #portfolio, #contact {
+		float: left;
+		padding: 2px 8px 2px 8px;
+		position: relative;
+		top: 70px;
+		left: 250px;
+	}
+
+	#about, #portfolio {
+		border-right-style: solid;
+		border-color: #f1f1f1;
+		border-width: 1px;
+	}
+
+
+	/*ABOUT ME PAGE*/
+	#headshot, #introduction {
+		margin: 0px;
+		clear: both;
+	}
+
+	#headshot {
+		width: 100%;
+	}
+
+	.main {
+		width: 311px;
+		clear: both;
+		float: left;
+		margin: 30px 20px 80px 80px;
+		/*margin-right: 20px;
+		margin-bottom: 80px;*/
+		/*padding: 0px 20px 20px 20px;*/
+	}
+
+
+
+	.connect {
+		width: 186px;
+		float: left;
+		text-align: center;
+		margin-left: 20px;
+		margin-bottom: 30px;
+		padding: 0px 20px 15px 20px;
+	}
+
+
+	.contactImages img {
+		width: 45px;
+		height: auto;
+		border: solid;
+		border-color: white;
+	}
+
+	.contactImages img:hover {
+		border-color: #4aaaa5;
+	}
+
+
+	input[type=text], input[type=message]{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+	}
+
+	fieldset {
+    padding: 10px;
+	}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+	/*MENU BAR*/
+
+	#menuBar{
+		color: #777777;
+		text-decoration: none;
+/*		position: fixed;*/
+		right: 210px;
+	}
+
+	#about, #portfolio, #contact {
+		float: left;
+		padding: 2px 25px 2px 25px;
+		position: relative;
+		top: 70px;
+		left: 220px;
+	}
+
+	#about, #portfolio {
+		border-right-style: solid;
+		border-color: #f1f1f1;
+		border-width: 1px;
+	}
+
+
+	/*ABOUT ME PAGE*/
+	#headshot, #introduction {
+		margin: 10px 20px 10px 0px;
+		clear: both;
+	}
+
+
+	#headshot {
+		width: 100%;
+	}
+	.main {
+		width: 90%;
+		clear: both;
+		margin: 30px 20px 20px 20px;
+		/*margin-right: 20px;
+		margin-bottom: 80px;*/
+		/*padding: 0px 20px 20px 20px;*/
+	}
+
+	.connect {
+		width: 90%;
+		clear:both;
+		/*text-align: center;*/
+		margin-left: 20px;
+		padding: 0px 20px 15px 20px;
+	}
+
+
+
+
+	/*CONTACT IMAGES*/
+
+	.contactImages {
+		float:left;
+	}
+
+
+	.contactImages img {
+		float: left;
+		width: 45px;
+		height: auto;
+		border: solid;
+		border-color: white;
+	}
+
+	.contactImages img:hover {
+		border-color: #4aaaa5;
+	}
+
+	
+
+	h3 {
+		text-align: left;
+	}
+
+
+	h1 {
+		left: 20px;
+	}
+
+}
+
+
+@media screen and (max-width: 640px) {
+	/*MENU BAR*/
+
+	#menuBar{
+		clear: both;
+		color: #777777;
+		text-decoration: none;
+		padding-bottom: 5px;
+		margin-top: 100px;
+		margin-bottom: 20px;
+		background-color: white;
+	}
+
+	#about, #portfolio, #contact {
+		position: relative;
+		left: 10px;
+		width: 20%;
+		height: 40px;
+		float: left;
+		text-align: center;
+	}
+
+
+
+	/*ABOUT ME PAGE*/
+	#headshot, #introduction {
+		margin: 10px 20px 10px 0px;
+		clear: both;
+	}
+
+
+
+	.main {
+		width: 90%;
+		clear: both;
+		margin: 30px 20px 20px 20px;
+		/*margin-right: 20px;
+		margin-bottom: 80px;*/
+		/*padding: 0px 20px 20px 20px;*/
+	}
+
+	.connect {
+		width: 90%;
+		clear:both;
+		/*text-align: center;*/
+		margin-left: 20px;
+		padding: 0px 20px 15px 20px;
+	}
+
+
+
+
+	/*CONTACT IMAGES*/
+
+	.contactImages {
+		float:left;
+	}
+
+
+	.contactImages img {
+		float: left;
+		width: 45px;
+		height: auto;
+		border: solid;
+		border-color: white;
+	}
+
+	.contactImages img:hover {
+		border-color: #4aaaa5;
+	}
+
+
+
+	h3 {
+		text-align: left;
+	}
+
+
+	h1 {
+		width: 90%;
+		left: 20px;
+	}
+
+
+
+	/*PORTFOLIO PAGE*/
+
+	.tileName {  /*header inside portfolio tiles*/
+		width: 100%;
+	}
+
+	.programTile:hover .tileName {  /*header inside portfolio tiles*/
+		width: 98.5%;
+	}
+
+	.programTile {
+		width: 90%;
+		height: auto;
+		clear:both;
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+	.programTile img {
+		width: 100%;
+		height: auto;
+		clear:both;
+		margin: 0px;
+		padding: 0px;
+	}
+
+
+
+
+	/*END PORTFOLIO PAGE*/
+
+
+
+}
